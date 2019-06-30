@@ -17,13 +17,21 @@ code {
   width: 300px;
 }
 
-.card .card-image .card-title{
+.card .card-image {
   color: black;
   font-weight: 400
+}
+
+.card-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .list {
   display: flex;
   margin-top: 20px;
   justify-content: space-around;
+}
+
+.total {
+  font-weight: bold;
 }

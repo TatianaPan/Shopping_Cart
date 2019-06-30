@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
+import '../../index.css'
 
  class ShopList extends Component {
 
@@ -8,11 +9,10 @@ import {connect} from 'react-redux'
             type: 'ADD_ITEM',
             item_id: id
         }
-        this.props.dispatch(action);
+        
         //const itemIndex = this.props.items.findIndex(item => item.id === id)
-        console.log(action.item_id)
-        return undefined;
-
+        
+        return this.props.dispatch(action);
     }
 
 
@@ -23,11 +23,12 @@ import {connect} from 'react-redux'
                 return (
                     <div className="card" key={item.id}>
                         <div className="card-image">
-                            <img src={item.img}/>
-                            <span className="card-title">{item.title}</span>
+                            <img src={item.img} alt='shoes'/>
+                            {/* <span className="card-title">{item.title}</span> */}
                         </div>
 
                         <div className="card-content">
+                            <p className='card-title'>{item.title}</p>
                             <p>{item.desc}</p>
                             <p>Price: CHF {item.price}.-</p>
                             <a className="button btn-floating btn-large waves-effect waves-light red" onClick={ () => this.handleAddItem(item.id) }><i className="material-icons">add</i></a>
