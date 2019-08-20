@@ -1,3 +1,21 @@
+## Simple Shopping Cart
+
+User Story:
+
+- The user is presented with a list of items.
+
+- User can click on one item to add it to his/her shopping cart.
+
+- The Shopping Cart list is updated with the new product.
+
+- Price for the individual item is calculated.
+
+- Price of the total cart is calculated.
+- User can remove a product from the cart.
+- User can edit the quantity of a product in the cart.
+
+      * * *
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
